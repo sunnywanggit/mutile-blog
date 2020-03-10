@@ -35,9 +35,6 @@
 </template>
 
 <script>
-    import auth from '@/api/auth.js'
-
-    window.auth = auth
 
     import {mapGetters, mapActions} from 'vuex'
 

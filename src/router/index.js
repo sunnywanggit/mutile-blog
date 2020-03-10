@@ -7,6 +7,8 @@ export default new Router({
   routes: [
     {
       path: '/',
+      name:'Index',
+      component:()=>import('../pages/Index/template.vue')
     }
   ]
 })
