@@ -1,0 +1,48 @@
+#detail {
+  background:white;
+  height: 100%;
+  .user-info {
+    display: grid;
+    grid: auto auto / 80px 1fr;
+
+    margin-top: 10px;
+    border-bottom: 1px solid #ebebeb;
+
+    .avatar {
+      grid-column: 1;
+      padding: 4px;
+      grid-row: 1 / span 4;
+      justify-items: center;
+      align-items: center;
+      display: grid;
+
+
+      .el-avatar{
+        width: 60px;
+        height: 60px;
+      }
+
+    }
+
+
+    h3 {
+      grid-column: 2;
+      grid-row: 1;
+      margin: 5px 0;
+    }
+
+    .user {
+      grid-column: 2;
+      grid-row: 2;
+      margin-top: 4px;
+      font-size: 12px;
+
+    }
+
+
+  }
+
+  .article{
+    padding: 30px 10px;
+  }
+}

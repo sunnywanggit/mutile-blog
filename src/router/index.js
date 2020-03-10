@@ -9,6 +9,11 @@ export default new Router({
       path: '/',
       name:'Index',
       component:()=>import('../pages/Index/template.vue')
+    },
+    {
+      path: '/detail/:blogId',
+      name: 'detail',
+      component:()=>import('../pages/Detail/template.vue')
     }
   ]
 })
