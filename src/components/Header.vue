@@ -10,12 +10,13 @@
         <div class="nav-right">
           <router-link to="/create"><i class="el-icon-edit"></i></router-link>
           <div class="block">
-            <el-avatar :size="45" class="avatar">avatar</el-avatar>
-            <ul>
+            <el-avatar :size="45" class="avatar" :src="user.avatar">avatar
+            </el-avatar>
+            <ul class="my">
               <li>
-                <router-link to="/my">我的</router-link>
+                <router-link to="/my" style="color: red">我的</router-link>
               </li>
-              <li><a href="#" @click="onLogout">注销</a></li>
+              <li><a href="#" @click="onLogout" style="color: red">注销</a></li>
             </ul>
           </div>
         </div>
@@ -48,7 +49,6 @@
                 'isLogin',
                 'user'
             ])
-
         },
         created() {
             this.checkLogin()
@@ -101,7 +101,23 @@
         grid-area: right;
         position: relative;
 
+
+
+        .block{
+
+          .my{
+            display: none;
+          }
+        }
+
+        .block:hover{
+          .my{
+            display: block;
+          }
+
+        }
         .el-icon-edit {
+
           position: absolute;
           font-size: 20px;
           right: 80px;

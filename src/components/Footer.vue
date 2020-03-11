@@ -8,6 +8,7 @@
   @import "../assets/base.less";
   footer{
     background-color:@color-footer-text;
+    margin-top: 10px;
 
     p{
       text-align: center;

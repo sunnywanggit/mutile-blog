@@ -1,4 +1,5 @@
 import blog from '@/api/blog'
+import migrating from "element-ui/src/mixins/migrating";
 
 export default {
   data() {
@@ -6,7 +7,7 @@ export default {
       title: '',
       description: '',
       content: '',
-      value: 'false',
+      value: true,
       titleNumber: '30',
       descNumber: '30',
       titleLimit: '',
@@ -15,7 +16,8 @@ export default {
   },
   methods: {
     onCreate() {
-      blog.createBlog({title: this.title, description: this.description, content: this.content,anIndex:this.atIndex})
+      blog.createBlog({title: this.title, description: this.description, content: this.content,atIndex:this.value})
+
         .then(res  => {
           this.$message.success(res.msg)
           this.$router.push({path:`/detail/${res.data.id}`})

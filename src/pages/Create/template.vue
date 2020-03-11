@@ -1,30 +1,27 @@
 <template>
   <div id="create">
-    <h2>创建文章</h2>
-    <h3>文章标题</h3>
     <el-input
       type="textarea"
+      class="title"
       :rows="1"
-      placeholder="请输入标题"
+      placeholder="请输入文章标题"
       v-model="title"
       v-bind:class="{wordlimit:titleLimit}"
     >
     </el-input>
     <p>你还能输入{{countTitleNumber}}个字</p>
-    <h3>内容简介</h3>
     <el-input
       type="textarea"
       :rows="1"
       v-bind:class="{desclimit:descLimit}"
-      placeholder="请输入内容"
+      placeholder="请输入文章梗概"
       v-model="description">
     </el-input>
     <p>你还能输入{{countDescNumber}}个字</p>
-    <h3>文章内容</h3>
     <el-input
       type="textarea"
       :autosize="{ minRows: 14, maxRows: 20}"
-      placeholder="请输入内容"
+      placeholder="请输入文章内容"
       v-model="content">
     </el-input>
     <div class="foot">
