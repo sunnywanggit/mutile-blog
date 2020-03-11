@@ -30,6 +30,21 @@ export default new Router({
       name: 'my',
       component:()=>import('../pages/My/template.vue')
     },
+    {
+      path: '/edit/:blogId',
+      name: 'edit',
+      component:()=>import('../pages/Edit/template.vue')
+    },
+    {
+      path: '/create',
+      name: 'create',
+      component:()=>import('../pages/Create/template.vue')
+    },
+    {
+      path: '/user/:userId',
+      name: 'user',
+      component:()=>import('../pages/User/template.vue')
+    },
 
   ]
 })
