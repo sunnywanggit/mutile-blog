@@ -13,7 +13,7 @@
             <el-avatar :size="45" class="avatar">avatar</el-avatar>
             <ul>
               <li>
-                <router-link to="/my">我的{{user.id}}</router-link>
+                <router-link to="/my">我的</router-link>
               </li>
               <li><a href="#" @click="onLogout">注销</a></li>
             </ul>

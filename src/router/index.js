@@ -25,6 +25,11 @@ export default new Router({
       name: 'register',
       component:()=>import('../pages/register/template.vue')
     },
+    {
+      path: '/my',
+      name: 'my',
+      component:()=>import('../pages/My/template.vue')
+    },
 
   ]
 })
