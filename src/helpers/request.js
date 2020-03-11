@@ -11,15 +11,17 @@ export default function request(url,type="GET",data={}) {
     let option = {
       url,
       // 我觉得这个地方不需要method，所以我简化了
-      // method:type
+      method:type,
       type
     }
     if(type.toLocaleLowerCase() === 'get'){
       option.params = data
     }else{
       option.data = data
+      console.log(option);
     }
     axios(option).then(res => {
+      console.log(res);
       if(res.data.status === 'ok'){
         resolve(res.data)
       }else{

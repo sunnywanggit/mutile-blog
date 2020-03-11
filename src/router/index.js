@@ -14,6 +14,17 @@ export default new Router({
       path: '/detail/:blogId',
       name: 'detail',
       component:()=>import('../pages/Detail/template.vue')
-    }
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component:()=>import('../pages/login/template.vue')
+    },
+    {
+      path: '/register',
+      name: 'register',
+      component:()=>import('../pages/register/template.vue')
+    },
+
   ]
 })
