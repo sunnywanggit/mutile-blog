@@ -10,8 +10,6 @@ module.exports = {
   loaders: utils.cssLoaders({
     sourceMap: sourceMapEnabled,
     extract: isProduction,
-    test: /\.(eot|svg|ttf|woff|woff2?)$/,
-    loader: 'file-loader'
   }),
   cssSourceMap: sourceMapEnabled,
   cacheBusting: config.dev.cacheBusting,
