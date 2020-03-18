@@ -65,18 +65,18 @@ module.exports = {
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
       },
-      {
-        test: /\.svg$/,
-        loader: 'svg-sprite-loader',
-        include: [path.resolve(__dirname, 'resources/backend/icons/svg')],
-        options: {
-          symbolId: 'icon-[name]'
-        }
-      },
-      {
-        test: /\.(eot|svg|ttf|woff|woff2?)$/,
-        loader: 'url-loader'
-      }
+      // {
+      //   test: /\.svg$/,
+      //   loader: 'svg-sprite-loader',
+      //   include: [path.resolve(__dirname, 'resources/backend/icons/svg')],
+      //   options: {
+      //     symbolId: 'icon-[name]'
+      //   }
+      // },
+      // {
+      //   test: /\.(eot|svg|ttf|woff|woff2?)$/,
+      //   loader: 'url-loader'
+      // }
     ]
   },
   node: {
