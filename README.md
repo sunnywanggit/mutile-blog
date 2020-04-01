@@ -22,4 +22,10 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 ### 待解决bug
 
-每页只能加载10篇博客
+每页只能加载10篇博客（解决首页布局问题）
+
+完善"我的页面"布局
+
+"展示到首页功能"bug修复
+
+

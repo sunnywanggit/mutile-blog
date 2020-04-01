@@ -19,9 +19,9 @@ export default {
       .then(res=>{
         // console.log(res);
         this.blogs = res.data
-        console.log(this.blogs);
+        // console.log(this.blogs);
         this.total = res.total
-        console.log(this.total);
+        // console.log(this.total);
         this.page = res.page
       })
   },
