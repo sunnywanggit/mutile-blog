@@ -11,7 +11,8 @@ export default {
       titleNumber: '30',
       descNumber: '30',
       titleLimit: '',
-      descLimit: ''
+      descLimit: '',
+      atIndex:false
     }
   },
   created(){
@@ -26,6 +27,13 @@ export default {
   },
   methods: {
     onCommit() {
+
+      console.log(this.blogId);
+      console.log(this.title);
+      console.log(this.description);
+      console.log(this.content);
+      console.log(this.atIndex);
+
       blog.updateBlog({blogId:this.blogId},{title: this.title, description: this.description, content: this.content,anIndex:this.atIndex})
         .then(res  => {
           this.$message.success(res.msg)

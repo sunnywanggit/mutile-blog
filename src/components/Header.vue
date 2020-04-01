@@ -9,9 +9,12 @@
         </div>
         <div class="nav-right">
           <router-link to="/create"><i class="el-icon-edit"></i></router-link>
+
           <div class="block">
-            <el-avatar :size="45" class="avatar" :src="user.avatar">avatar
-            </el-avatar>
+            <div class="avatar">
+              <el-avatar :size="45" class="avatar" :src="user.avatar">avatar
+              </el-avatar>
+            </div>
             <ul class="my">
               <li>
                 <router-link to="/my" style="color: red">我的</router-link>
@@ -100,21 +103,29 @@
       .nav-right {
         grid-area: right;
         position: relative;
-
-
-
         .block{
+          z-index: 99;
+
 
           .my{
             display: none;
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            height:40px;
           }
         }
-
         .block:hover{
           .my{
             display: block;
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            margin: 0;
+            list-style: none;
           }
-
         }
         .el-icon-edit {
 
@@ -186,10 +197,6 @@
       }
 
     }
-  }
-
-  header.no-login {
-
   }
 </style>
 

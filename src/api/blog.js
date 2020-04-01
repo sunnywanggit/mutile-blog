@@ -32,7 +32,8 @@ export default {
     return request(URL.UPDATE.replace(':blogId',blogId),'PATCH',{title,content,description,atIndex})
   },
   //删除博客
-  deleteBlog({blogId}){
+  deleteBlog(blogId){
+    console.log(`blog.js${blogId}`);
     return request(URL.DELETE.replace(':blogId',blogId),'DELETE')
   },
   //创建博客

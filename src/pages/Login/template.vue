@@ -3,7 +3,11 @@
     <el-input v-model="username" placeholder="请输入用户名" autocomplete="on"></el-input>
     <el-input v-model="password" placeholder="请输入密码" @keyup.enter="onLogin" autocomplete="on"></el-input>
     <el-button @click="onLogin" type="success" plain size="medium">立刻登录</el-button>
-    <p>还没有账号？点击注册吧！</p>
+    <router-link to="/register">还没有账号？点击注册吧！</router-link>
+    <router-link to="/register">还没有账号？点击注册吧！</router-link>
+    <router-link to="/register">还没有账号？点击注册吧！</router-link>
+    <router-link to="/register">还没有账号？点击注册吧！</router-link>
+    为什么我这里的内容显示不出来呢
   </div>
 </template>
 
